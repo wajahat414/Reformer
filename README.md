@@ -1,27 +1,50 @@
-# README
-This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com”
+Project: Working with Rails_forms ##(Reformer)
 
+Getting started Clone the repository to your local machine
 
+$ git clone https://github.com/wajahat414/Reformer.gitt
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Go to your directory
 
-Things you may want to cover:
+$ cd reformer
 
-* Ruby version
+Run in terminal [You must have Ruby installed on your system.]
 
-* System dependencies
+$ ruby bundle install
 
-* Configuration
+the command bundle install is important to install required gem for the game to start. After you finish type:
 
-* Database creation
+$ rails server
 
-* Database initialization
+Open your browser to localhost
 
-* How to run the test suite
+http://localhost:3000/
 
-* Services (job queues, cache servers, search engines, etc.)
+Run tests Rubocop lint
 
-* Deployment instructions
+rubocop .
 
-* ...
+handshake Contributing Contributions, issues and feature requests are welcome!
+
+## Authors
+
+👤 **wajahat akram**
+
+- Github: [@wajahat414](https://github.com/wajahat414)
+- Twitter: [@wajahat414](https://twitter.com/wajahat414)
+- Linkedin: [@wajahat414](https://www.linkedin.com/in/wajahat414)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- The project was inspired by the [Microverse](https://www.microverse.org/) program.
+
+## 📝 License
+
+This project is [MIT](/LICENSE) licensed.
+
+## Issues
+please Addrss any issues at [issues page](https://github.com/wajahat414/Reformer/issuess)

@@ -11,7 +11,7 @@
 <input type="submit" value="Create">
 </form>     
 -->
-
+<!--
  <h1>enter details to Create New user </h1> 
 <%= form_tag(users_path, method: "post") do %>
     <%= label_tag(:username, "Username:") %>
@@ -24,3 +24,15 @@
 
 
   <% end %>
+  -->
+  <h1>enter details to Create New user </h1> 
+
+<%= form_with model: User.new do |form| %>
+        <%= label(:user, :username,value: "input your username") %>
+        <%= form.text_field :username, placeholder: "example123" %><br><br>
+        <%= label(:user, :email,value: "Enter your email") %>
+        <%= form.text_field :email  ,placeholder: "example@gmail.com"%><br><br>
+        <%= label(:user, :password,value: "Enter password") %>
+        <%= form.text_field :password %><br><br>
+        <%= form.submit %>
+    <% end %>   

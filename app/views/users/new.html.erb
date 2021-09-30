@@ -23,20 +23,22 @@
 <input type="submit" value="Create">
 </form>     
 -->
-<!--
+
  <h1>enter details to Create New user </h1> 
 <%= form_tag(users_path, method: "post") do %>
     <%= label_tag(:username, "Username:") %>
-    <input id="username" name="username" type="text" /><br><br>
+    <%=text_field_tag (:username)%> <br><br>
     <%= label_tag(:email, "email:") %>
-    <input id="email" name="email" type="text" /><br><br>
+    <%=email_field_tag (:email)%> <br><br><br><br>
     <%= label_tag(:password, "password:") %>
-    <input id="password" name="password" type="password" /><br><br>
+    <%=password_field_tag (:password)%> <br><br>
     <%= submit_tag("Create") %>
 
 
   <% end %>
-  -->
+
+
+  <!--
   <h1>enter details to Create New user </h1> 
 
 <%= form_with model: User.new do |form| %>
@@ -48,3 +50,4 @@
         <%= form.text_field :password %><br><br>
         <%= form.submit %>
     <% end %>   
+    -->

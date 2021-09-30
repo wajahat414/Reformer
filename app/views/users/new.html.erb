@@ -24,6 +24,8 @@
 </form>     
 -->
 
+
+<!--
  <h1>enter details to Create New user </h1> 
 <%= form_tag(users_path, method: "post") do %>
     <%= label_tag(:username, "Username:") %>
@@ -36,9 +38,10 @@
 
 
   <% end %>
+  -->
 
 
-  <!--
+
   <h1>enter details to Create New user </h1> 
 
 <%= form_with model: User.new do |form| %>
@@ -50,4 +53,3 @@
         <%= form.text_field :password %><br><br>
         <%= form.submit %>
     <% end %>   
-    -->

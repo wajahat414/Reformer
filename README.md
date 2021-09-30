@@ -1,24 +1,50 @@
-# README
+Project: Working with Rails_forms ##(Reformer)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Getting started Clone the repository to your local machine
 
-Things you may want to cover:
+$ git clone https://github.com/wajahat414/Reformer.gitt
 
-* Ruby version
+Go to your directory
 
-* System dependencies
+$ cd reformer
 
-* Configuration
+Run in terminal [You must have Ruby installed on your system.]
 
-* Database creation
+$ ruby bundle install
 
-* Database initialization
+the command bundle install is important to install required gem for the game to start. After you finish type:
 
-* How to run the test suite
+$ rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+Open your browser to localhost
 
-* Deployment instructions
+http://localhost:3000/
 
-* ...
+Run tests Rubocop lint
+
+rubocop .
+
+handshake Contributing Contributions, issues and feature requests are welcome!
+
+## Authors
+
+👤 **wajahat akram**
+
+- Github: [@wajahat414](https://github.com/wajahat414)
+- Twitter: [@wajahat414](https://twitter.com/wajahat414)
+- Linkedin: [@wajahat414](https://www.linkedin.com/in/wajahat414)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- The project was inspired by the [Microverse](https://www.microverse.org/) program.
+
+## 📝 License
+
+This project is [MIT](/LICENSE) licensed.
+
+## Issues
+please Addrss any issues at [issues page](https://github.com/wajahat414/Reformer/issuess)

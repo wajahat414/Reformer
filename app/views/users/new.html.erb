@@ -1,0 +1,55 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+    <ul>
+      <% @user.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<!--
+<h1>Enter Details of new User to create</h1>
+<form action="/users" method="post" accept-charset="utf-8">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<label for="username">username:</label>
+<input type="text" id="username" name="user[username]"><br><br>
+<label for="email">email:</label>
+<input type="text" id="email" name="user[email]"><br><br>
+<label for="password">password:</label>
+<input type="password" id="password" name="user[password]"><br><br>
+<input type="submit" value="Create">
+</form>     
+-->
+
+
+<!--
+ <h1>enter details to Create New user </h1> 
+<%= form_tag(users_path, method: "post") do %>
+    <%= label_tag(:username, "Username:") %>
+    <%=text_field_tag (:username)%> <br><br>
+    <%= label_tag(:email, "email:") %>
+    <%=email_field_tag (:email)%> <br><br><br><br>
+    <%= label_tag(:password, "password:") %>
+    <%=password_field_tag (:password)%> <br><br>
+    <%= submit_tag("Create") %>
+
+
+  <% end %>
+  -->
+
+
+
+  <h1>enter details to Create New user </h1> 
+
+<%= form_with model: User.new do |form| %>
+        <%= label(:user, :username,value: "input your username") %>
+        <%= form.text_field :username, placeholder: "example123" %><br><br>
+        <%= label(:user, :email,value: "Enter your email") %>
+        <%= form.text_field :email  ,placeholder: "example@gmail.com"%><br><br>
+        <%= label(:user, :password,value: "Enter password") %>
+        <%= form.text_field :password %><br><br>
+        <%= form.submit %>
+    <% end %>   
